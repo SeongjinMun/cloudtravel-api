@@ -1,0 +1,143 @@
+<?php
+spl_autoload_register(function ($path) {
+	
+	$path  = str_replace('\\','/',$path);
+    	$paths = explode('/', $path);
+	
+    	if (preg_match('/controllers/',strtolower($paths[1]))) {
+        	$paths[1] = 'controllers';
+    	} else if (preg_match('/models/',strtolower($paths[1]))) {
+        	$paths[1] = 'models';
+	}
+    	$loadFile =  $paths[0].'/'.$paths[1].'/'.$paths[2].'.php';
+	
+	//echo $loadFile."<br>";
+    	//require_once $loadFile; 
+})
+
+/**
+ * AccessException constructor.
+ * @param string $message
+ * @param int $code
+ * @param Throwable|null $previous
+ */
+
+function postFilter($argArray){
+    foreach ($argArray as $key => $value){
+        $argArray[$key] = htmlspecialchars($argArray[$key]);
+    }
+    return $argAirray;
+}x====q
+
+function emptyCheck($argPostArray){
+    $check = false;
+    foreach ($argPostArray as $key => $value){
+        if ($key == 'keyword_text' || $key == 'keyword' || $key == 'page') {
+            continue;
+        }
+        if ($argPostArray[$key] == ''){
+            $check = true;
+            break;
+        }
+    }
+    if (!$check){
+        new Exception();
+    }
+    return $check;
+}
+
+function getSearchSql($keyword, $keywordText){
+    if ($keywordText == '') return;
+    switch ($keyword){
+        case "title":
+            return " title like \"%{$keywordText}%\" and ";
+        case "content":
+            return " contents like \"%{$keywordText}%\" and ";
+        case "writer":
+            return " user_name like \"%{$keywordText}%\" and ";
+        case "title-content":
+            return " title like \"%{$keywordText}%\" or contents like \"%{$keywordText}%\" and ";
+    }
+}
+
+function createPageForm($page, $action, $submitValue, $searchOption){
+    $option = "";
+    if ($searchOption[0] != ""){
+        $option = "<input type='hidden' name='keyword' value='{$searchOption[0]}'>
+                   <input type='hidden' name='keyword_text' value='{$searchOption[1]}'>";
+    }
+    $form =  "<form action='{$action}' method='POST'>
+              {$option}
+              <input type='hidden' name='page' value='{$page}'>";
+    $form .= "<input type='submit' value='{$submitValue}'></form>";
+    return $form;
+}
+
+function getErrorMsg($argCode){
+    if ($argCode == ""){
+        return "";
+    }
+    switch ($argCode){
+        case DBCONN_ERROR :
+            return "DB 연결 오류 발생";
+        case REQ_ERROR :
+            return "요청 오류 발생";
+        case BLANK_ERROR :
+            return "공란이 있습니다.";
+        case PASSWD_ERROR :
+            return "비밀번호가 일치하지 않습니다.";
+        case LOGIN_ERROR :
+            return "회원정보가 일치하지 않습니다.";
+        case ACCESS_ERROR :
+            return "잘못된 접근입니다.";
+    }
+}
+
+function redirectPage($argAction, $argPostArray, $argAlert){
+
+    echo ("<form action='{$argAction}' method='POST' id='redirect'>");
+    echo ("<input type='hidden' name='page' value='{$argPostArray[0]}'>");
+    echo ("<input type='hidden' name='keyword' value='{$argPostArray[1]}'>");
+    echo ("<input type='hidden' name='keyword_text' value='{$argPostArray[2]}'>");
+    if (isset($argPostArray[3])){
+        echo ("<input type='hidden' name='content_no' value='{$argPostArray[3]}'>");
+    }
+    echo ("</form>");
+    if ($argAlert != null){
+        echo ("<script>alert('{$argAlert}');</script>");
+    }
+    echo ("<script>document.getElementById('redirect').submit();</script>");
+}
+
+function redirectPage2($argAction, $argPostArray, $argAlert){
+    echo ("<form action='{$argAction}' method='POST' id='redirect'>");
+    if ($argPostArray != null){
+        foreach ($argPostArray as $key => $value){
+            echo ("<input type='hidden' name='{$key}' value='{$value}'>");
+        }
+    }
+    echo ("</form>");
+    if ($argAlert != null){
+        echo ("<script>alert('{$argAlert}');</script>");
+    }
+    echo ("<script>document.getElementById('redirect').submit();</script>");
+}
+
+function alertMsg($argMsg){
+    echo ("<script>alert('{$argMsg}');</script>");
+}
+
+function addHiddenInput($argArray){
+    foreach ($argArray as $key => $value){
+        echo ("<input type='hidden' name='{$key}' value='{$value}'>");
+    }
+}
+
+function addInput($argArray){
+    for ($i = 0; $i < count($argArray); $i++){
+        foreach ($argArray[$i] as $key => $value){
+            echo ("<input type='hidden' name='{$key}' value='{$value}'>");
+        }
+    }
+}
+
