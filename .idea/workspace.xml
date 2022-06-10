@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fe012b2c-65dd-4fe8-a3b0-815e8f7737c7" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="ProjectId" id="27SvDoCQPuicsxSeTfrmWQXKAxd" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\Cloudtravel\application" />
+      <recent name="C:\laragon\www\Cloudtravel\application\libraries" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\Cloudtravel\application\stmt" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fe012b2c-65dd-4fe8-a3b0-815e8f7737c7" name="Default Changelist" comment="" />
+      <created>1649326184696</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1649326184696</updated>
+      <workItem from="1649326185751" duration="197000" />
+      <workItem from="1649326406112" duration="4196000" />
+      <workItem from="1649341875741" duration="2709000" />
+      <workItem from="1649412397489" duration="2730000" />
+      <workItem from="1649757420168" duration="2716000" />
+      <workItem from="1649760160081" duration="1246000" />
+      <workItem from="1649762169921" duration="2619000" />
+      <workItem from="1649766474393" duration="93000" />
+      <workItem from="1649767186193" duration="2153000" />
+      <workItem from="1649769628835" duration="542000" />
+      <workItem from="1649773626036" duration="2931000" />
+      <workItem from="1649780892361" duration="3701000" />
+      <workItem from="1649849864617" duration="751000" />
+      <workItem from="1649909495139" duration="804000" />
+      <workItem from="1649910325632" duration="294000" />
+      <workItem from="1649929578764" duration="163000" />
+      <workItem from="1649929938821" duration="102000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="690" y="270" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1649850057364">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="690" y="270" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1649850057364" />
+    <state x="717" y="383" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1649758621511">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="717" y="383" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1032@0.0.1920.1032" timestamp="1649758621511" />
+    <state x="721" y="340" key="FileChooserDialogImpl" timestamp="1649910621737">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="721" y="340" key="FileChooserDialogImpl/0.0.1920.1032@0.0.1920.1032" timestamp="1649910621737" />
+    <state x="601" y="267" key="NewPhpClassDialog" timestamp="1649849913960">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="601" y="267" key="NewPhpClassDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1649849913960" />
+    <state x="794" y="438" key="NewPhpFileDialog" timestamp="1649758697893">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="794" y="438" key="NewPhpFileDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1649758697893" />
+    <state width="254" height="198" key="RunAnythingAction_Filter_Popup" timestamp="1649326347760">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state width="254" height="198" key="RunAnythingAction_Filter_Popup/0.0.1920.1032@0.0.1920.1032" timestamp="1649326347760" />
+    <state x="981" y="165" key="run.anything.popup" timestamp="1649326347760">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="981" y="165" key="run.anything.popup/0.0.1920.1032@0.0.1920.1032" timestamp="1649326347760" />
+  </component>
+</project>
