@@ -13,9 +13,13 @@ class Controller{
     public function __construct($pageType, $action){
 
         //$this->userModel  = new UserModel();
-	
+
         if(isset($_POST)){
             //$_POST = postFilter($_POST);
+        }
+
+        if ($pageType == 'Health'){
+            $action = 'getHealthCheck';
         }
 
         try {
@@ -29,15 +33,10 @@ class Controller{
                     throw new Exception();
             }
         }catch (Exception $e){
-            if ($pageType  == 'error'){
+            if ($pageType  == 'Error'){
                 $action = 'getErrorInfo';
             }
         }
-
-        if ($pageType == 'Health'){
-            $action = 'getHealthCheck';
-        }
-
         $this->$action();
     }
 
