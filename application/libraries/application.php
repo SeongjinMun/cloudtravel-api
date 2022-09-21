@@ -25,7 +25,6 @@ class Application{
 		$controllerName = '\application\controllers\\'.$params['pageType'].'Controller';
                 new $controllerName($params['pageType'], $params['action']);
         }
-
     }
 }
 

@@ -1,12 +1,15 @@
 <?php
 
-
 namespace application\controllers;
 
 use application\models\UserModel;
 use application\stmt\userResponse;
 
 class DataController extends Controller {
+
+    public function test(){
+        echo "DataController OK";
+    }
 
     public function getUserInfo(){
         $receivedData = json_decode(file_get_contents('php://input'));

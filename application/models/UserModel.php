@@ -7,6 +7,21 @@ namespace application\models;
 use mysql_xdevapi\Exception;
 
 class UserModel extends Model {
+
+    public function synUserInfo($receivedData){
+        $userName = $receivedData->username;
+        $sql = "INSERT INTO user_info(username) VALUES(:UserName)";
+        try {
+            $stmt = $this->conn->prepare($sql);
+            $stmt->bindParam(":UserName", $userName, PDO::PARAM_STR);
+            $stmt->execute();
+            $result = $stmt->rowCount();
+        }catch (Exception $e){
+            return $result;
+        }
+        return $result;
+    }
+
     public function getUserInfo(){
         $sql = "SELECT * FROM user_info";
         try {

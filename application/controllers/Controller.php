@@ -7,45 +7,38 @@ use Exception;
 session_start();
 
 class Controller{
-    protected $userModel;
+
+    //protected $userModel;
 
     public function __construct($pageType, $action){
 
-        $this->userModel  = new UserModel();
+        //$this->userModel  = new UserModel();
 	
-	if(isset($_POST)){
-		//$_POST = postFilter($_POST);
-	}
+        if(isset($_POST)){
+            //$_POST = postFilter($_POST);
+        }
 
         try {
             $validateAction = false;
-	    foreach (get_class_methods($this) as $value){
+            foreach (get_class_methods($this) as $value){
                 if ($action == $value){
-			$validateAction = true;
+                    $validateAction = true;
                 }
-	    }
-	    if (!$validateAction){
-                throw new Exception();
+            }
+            if (!$validateAction){
+                    throw new Exception();
             }
         }catch (Exception $e){
             if ($pageType  == 'error'){
                 $action = 'getErrorInfo';
             }
+        }
 
-	}
-        if ($pageType == 'Data'){
-            try {
-                switch ($action){
-			case 'getlist' :            case 'getErrorInfo' :
-			case 'getUserInfo' :
+        if ($pageType == 'Health'){
+            $action = 'getHealthCheck';
+        }
 
-                }
-            }catch (Exception $e){
-                $action = 'error';
-            }
-	}
         $this->$action();
-	
     }
 
 }

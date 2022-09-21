@@ -10,7 +10,7 @@ define('_LIBRARY', _APP.'libraries/');
 
 define('UTILFILE', 'util.php');
 
-define('RESPONSE_USER', _LIBRARY.'stmt/userResponse.php');
+define('RESPONSE_USER', _LIBRARY.'stmt/UserResponse.php');
 
 //UrlInfo
 define('ERROR_LIST', '/error/list');
@@ -19,7 +19,8 @@ define('DATA_USER', '/data/getUserInfo');
 
 //DBInfo
 define('DB_TYPE', 'mysql');
-define('DB_HOST', 'sqldb.cgol6xhisqmi.ap-northeast-2.rds.amazonaws.com');
+define('DB_HOST', 'cloudtravel-rds-mysql.cgol6xhisqmi.ap-northeast-2.rds.amazonaws.com');
+//define('DB_HOST', 'sqldb.cgol6xhisqmi.ap-northeast-2.rds.amazonaws.com');
 define('DB_NAME', 'travelDB');
 define('DB_USER', 'admin');
 define('DB_PASSWORD', '1234asdf');
