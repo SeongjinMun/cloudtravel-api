@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="fe012b2c-65dd-4fe8-a3b0-815e8f7737c7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile.dev" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile.dev" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,17 +13,27 @@
   <component name="ComposerSettings">
     <execution />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Dockerfile.dev" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="27SvDoCQPuicsxSeTfrmWQXKAxd" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/git-workspace/Dockerfiles",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\laragon\www\Cloudtravel\application" />
@@ -57,40 +68,14 @@
       <workItem from="1649910325632" duration="294000" />
       <workItem from="1649929578764" duration="163000" />
       <workItem from="1649929938821" duration="102000" />
+      <workItem from="1664091316892" duration="1263000" />
+      <workItem from="1664181132287" duration="3100000" />
+      <workItem from="1664301348525" duration="1898000" />
+      <workItem from="1664863618276" duration="3974000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="690" y="270" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1649850057364">
-      <screen x="0" y="0" width="1920" height="1032" />
-    </state>
-    <state x="690" y="270" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1649850057364" />
-    <state x="717" y="383" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1649758621511">
-      <screen x="0" y="0" width="1920" height="1032" />
-    </state>
-    <state x="717" y="383" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1032@0.0.1920.1032" timestamp="1649758621511" />
-    <state x="721" y="340" key="FileChooserDialogImpl" timestamp="1649910621737">
-      <screen x="0" y="0" width="1920" height="1032" />
-    </state>
-    <state x="721" y="340" key="FileChooserDialogImpl/0.0.1920.1032@0.0.1920.1032" timestamp="1649910621737" />
-    <state x="601" y="267" key="NewPhpClassDialog" timestamp="1649849913960">
-      <screen x="0" y="0" width="1920" height="1032" />
-    </state>
-    <state x="601" y="267" key="NewPhpClassDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1649849913960" />
-    <state x="794" y="438" key="NewPhpFileDialog" timestamp="1649758697893">
-      <screen x="0" y="0" width="1920" height="1032" />
-    </state>
-    <state x="794" y="438" key="NewPhpFileDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1649758697893" />
-    <state width="254" height="198" key="RunAnythingAction_Filter_Popup" timestamp="1649326347760">
-      <screen x="0" y="0" width="1920" height="1032" />
-    </state>
-    <state width="254" height="198" key="RunAnythingAction_Filter_Popup/0.0.1920.1032@0.0.1920.1032" timestamp="1649326347760" />
-    <state x="981" y="165" key="run.anything.popup" timestamp="1649326347760">
-      <screen x="0" y="0" width="1920" height="1032" />
-    </state>
-    <state x="981" y="165" key="run.anything.popup/0.0.1920.1032@0.0.1920.1032" timestamp="1649326347760" />
   </component>
 </project>
