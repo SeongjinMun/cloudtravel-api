@@ -20,9 +20,9 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 RUN wget http://caos.kldp.net/frs/download.php/4855/mod_url-apache2-1.15.tar.bz2
 RUN bunzip2 mod_url-apache2-1.15.tar.bz2
-RUN tar xvf mod_url-apache2-1.15.tar
+RUN tar xvf mod_url-apache2-1.15.tar -C ./
 
-RUN ./mod_url-apache2-1.15/apxs -i -c mod_url.c
+RUN apxs -i -c mod_url.c
 
 COPY ./url.conf /etc/apache2/mods-enabled/url.conf
 COPY ./url.load /etc/apache2/mods-enabled/url.load
