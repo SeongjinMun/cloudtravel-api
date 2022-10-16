@@ -1,9 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fe012b2c-65dd-4fe8-a3b0-815e8f7737c7" name="Default Changelist" comment="">
+    <list default="true" id="fe012b2c-65dd-4fe8-a3b0-815e8f7737c7" name="Default Changelist" comment="Default Changelist">
+      <change beforePath="$PROJECT_DIR$/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dockerfile.dev" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile.dev" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/BannerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/BannerController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/CourseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/CourseController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/DataController.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/DataController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/ErrorController.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/ErrorController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/HealthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/HealthController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/libraries/application.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/libraries/application.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/libraries/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/libraries/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/libraries/util.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/libraries/util.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/libraries/util.php.save" beforeDir="false" afterPath="$PROJECT_DIR$/application/libraries/util.php.save" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/models/BannerModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/BannerModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/models/CourseModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/CourseModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/models/Model.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/Model.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/models/UserModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/UserModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/stmt/BannerResponse.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/stmt/BannerResponse.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/stmt/CourseResponse.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/stmt/CourseResponse.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/stmt/userResponse.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/stmt/userResponse.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appspec.yml" beforeDir="false" afterPath="$PROJECT_DIR$/appspec.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,9 +37,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Dockerfile.dev" root0="SKIP_INSPECTION" />
-  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -29,8 +47,15 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/git-workspace/Dockerfiles&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.highlight.mappings&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.highlight.symlinks&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.show.date&quot;: &quot;false&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.show.permissions&quot;: &quot;false&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.show.size&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/git-workspace/CloudTravel_API&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -73,6 +98,13 @@
       <workItem from="1664301348525" duration="1898000" />
       <workItem from="1664863618276" duration="3974000" />
       <workItem from="1665054198996" duration="37000" />
+      <workItem from="1665249216065" duration="1806000" />
+      <workItem from="1665292772967" duration="1475000" />
+      <workItem from="1665555091753" duration="11495000" />
+      <workItem from="1665629376227" duration="5219000" />
+      <workItem from="1665648113985" duration="6721000" />
+      <workItem from="1665672368295" duration="43000" />
+      <workItem from="1665890190084" duration="492000" />
     </task>
     <servers />
   </component>

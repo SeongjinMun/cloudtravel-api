@@ -1,7 +1,7 @@
 <?php
 namespace application\stmt;
 
-class userResponse{
+class UserResponse{
     public $email, $name;
     public function __construct($data){
         $this->email  = $data[1];

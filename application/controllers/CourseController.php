@@ -4,8 +4,8 @@ namespace application\controllers;
 
 use application\models\CourseModel;
 use application\models\UserModel;
-use application\stmt\courseResponse;
 use application\stmt\userResponse;
+use application\stmt\CourseResponse;
 
 class CourseController extends Controller {
 
@@ -22,19 +22,21 @@ class CourseController extends Controller {
         }else{
             $responseData = new courseResponse(false);
         }
-        echo json_encode($responseData);
+
+
+        echo json_encode($responseData, JSON_UNESCAPED_UNICODE|JSON_UNESCAPED_SLASHES);
     }
 
-    public function mainTopCourseLis(){
+    public function mainTopCourseList(){
         $model = new CourseModel();
-        if ($results = $model->getMainTopCourseLis()){
+        if ($results = $model->getMainTopCourseList()){
             for ($i = 0; $i < count($results); $i++){
                 $responseData[] = new courseResponse($results[$i]);
             }
         }else{
             $responseData = new courseResponse(false);
         }
-        echo json_encode($responseData);
+        echo json_encode($responseData, JSON_UNESCAPED_UNICODE|JSON_UNESCAPED_SLASHES);
     }
 
     public function mainMiddleCourseList(){
@@ -46,7 +48,7 @@ class CourseController extends Controller {
         }else{
             $responseData = new courseResponse(false);
         }
-        echo json_encode($responseData);
+        echo json_encode($responseData, JSON_UNESCAPED_UNICODE|JSON_UNESCAPED_SLASHES);
     }
 
     public function MainBottomCourseList(){

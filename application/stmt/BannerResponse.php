@@ -3,11 +3,13 @@
 namespace application\stmt;
 
 class bannerResponse{
-    public $title, $subtitle, $url;
+    public $title, $url, $link, $courseId;
 
     public function __construct($data){
-        $this->title  = $data[0];
-        $this->subtitle = $data[1];
-        $this->url = $data[2];
+        $this->courseId = $data[0];
+        $this->title  = $data[1];
+        $this->link = $data[2];
+        $this->url = $data[3];
     }
+
 }
