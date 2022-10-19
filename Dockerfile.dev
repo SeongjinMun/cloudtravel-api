@@ -18,7 +18,6 @@ RUN sed -i 's/post_max_size = 8M/post_max_size = 100M/' /etc/php/7.4/apache2/php
 ENV TZ=Asia/Seoul
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
-COPY ./charset.conf /etc/apache2/conf-available/
 COPY ./000-default.conf /etc/apache2/sites-available/
 COPY ./ /var/www/html/
 
@@ -26,4 +25,4 @@ RUN a2enmod rewrite
 
 EXPOSE 80
 
-CMD ["apachectl", "-D", "FOREGROUND"]f
+CMD ["apachectl", "-D", "FOREGROUND"]

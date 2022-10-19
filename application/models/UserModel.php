@@ -8,9 +8,14 @@ use mysql_xdevapi\Exception;
 
 class UserModel extends Model {
 
-    public function synUserInfo($receivedData){
-        $userName = $receivedData->username;
+    public function getSynUser($receivedData){
+
+        print_r($_POST);
+
+        $userName=$_POST['user'];
+
         $sql = "INSERT INTO user_info(username) VALUES(:UserName)";
+
         try {
             $stmt = $this->conn->prepare($sql);
             $stmt->bindParam(":UserName", $userName, PDO::PARAM_STR);
