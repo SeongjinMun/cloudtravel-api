@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe012b2c-65dd-4fe8-a3b0-815e8f7737c7" name="Default Changelist" comment="Default Changelist">
-      <change afterPath="$PROJECT_DIR$/application/stmt/CommonResponse.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/000-default.conf" beforeDir="false" afterPath="$PROJECT_DIR$/000-default.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile.dev" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile.dev" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/models/UserModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/UserModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/stmt/userResponse.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/stmt/UserResponse.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/charset.conf" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +84,7 @@
       <workItem from="1665629376227" duration="5219000" />
       <workItem from="1665648113985" duration="6721000" />
       <workItem from="1665672368295" duration="43000" />
-      <workItem from="1665890190084" duration="36677000" />
+      <workItem from="1665890190084" duration="37510000" />
     </task>
     <servers />
   </component>
