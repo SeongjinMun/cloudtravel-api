@@ -17,7 +17,6 @@ class BannerController extends Controller{
         }else{
             $responseData = new bannerResponse(false);
         }
-
         echo json_encode($responseData, JSON_UNESCAPED_UNICODE|JSON_UNESCAPED_SLASHES);
     }
 

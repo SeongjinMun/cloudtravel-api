@@ -9,10 +9,6 @@ use application\stmt\CourseResponse;
 
 class CourseController extends Controller {
 
-    public function test(){
-        echo "CourseController OK";
-    }
-
     public function courseList(){
         $model = new CourseModel();
         if ($results = $model->getCourseList()){
@@ -22,8 +18,6 @@ class CourseController extends Controller {
         }else{
             $responseData = new courseResponse(false);
         }
-
-
         echo json_encode($responseData, JSON_UNESCAPED_UNICODE|JSON_UNESCAPED_SLASHES);
     }
 
@@ -77,4 +71,11 @@ class CourseController extends Controller {
         }
         echo json_encode($responseData);
     }
+
+    public function rank(){
+        echo "test";
+//        $receivedData = json_decode(file_get_contents('php://input'));
+//        echo $receivedData->title;
+    }
+
 }

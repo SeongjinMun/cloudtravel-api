@@ -34,3 +34,14 @@ define('PASSWD_ERROR', 3);
 define('REQ_ERROR', 4);
 define('LOGIN_ERROR', 5);
 define('ACCESS_ERROR', 6);
+
+//UserSynInfo
+define('USERSYN_ERROR', 0);
+define('USER_REGISTERED',   1);
+define('USER_REFRESH_TOKEN', 2);
+define('USER_LOGOUT', 3);
+define('USER_INFO', 4);
+define('USER_UPDATE', 5);
+
+define('REQUEST_OK', 200);
+define('REQUEST_ERROR', 202);

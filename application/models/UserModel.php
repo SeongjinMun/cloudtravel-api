@@ -8,27 +8,48 @@ use mysql_xdevapi\Exception;
 
 class UserModel extends Model {
 
-    public function getSynUser($receivedData){
+    public function getSynUser(){
 
-        print_r($_POST);
+        $requestType = $_POST['type'];
+        $userName  = $_POST['email'];
+        $userToken = $_POST['token'];
 
-        $userName=$_POST['user'];
 
-        $sql = "INSERT INTO user_info(username) VALUES(:UserName)";
-
-        try {
-            $stmt = $this->conn->prepare($sql);
-            $stmt->bindParam(":UserName", $userName, PDO::PARAM_STR);
-            $stmt->execute();
-            $result = $stmt->rowCount();
-        }catch (Exception $e){
-            return $result;
+        switch ($requestType){
+            case USER_REGISTERED :
+                $sql = "INSERT INTO user_info(user_email, user_token) VALUES('$userName', '{$userToken}')";
+                try {
+                    $stmt = $this->conn->prepare($sql);
+                    $stmt->execute();
+                    return REQUEST_OK;
+                }catch (Exception $e){
+                    return REQUEST_ERROR;
+                }
+            break;
+            case USER_LOGOUT :
+                $userToken = "";
+            case USER_REFRESH_TOKEN :
+                $sql = "UPDATE user_info SET user_token='{$userToken}' WHERE user_email='{$userName}'";
+                try {
+                    $stmt = $this->conn->prepare($sql);
+                    $stmt->execute();
+                    return REQUEST_OK;
+                }catch (Exception $e){
+                    return REQUEST_ERROR;
+                }
+            break;
+            default :
+                return REQUEST_ERROR;
         }
-        return $result;
+
     }
 
     public function getUserInfo(){
-        $sql = "SELECT * FROM user_info";
+
+        $userName  = $_POST['email'];
+        $userToken = $_POST['token'];
+
+        $sql = "SELECT * FROM user_info WHERE user_email='{$userName}' AND user_token='{$userToken}'";
         try {
             $stmt = $this->conn->prepare($sql);
             $stmt->execute();
@@ -38,5 +59,7 @@ class UserModel extends Model {
         }
         return $result;
     }
+
+
 
 }
